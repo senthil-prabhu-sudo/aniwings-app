@@ -82,7 +82,7 @@ export default function Home({ version, updateData }) {
             <div className="bi-right">
               <div className="app-mockup-wrapper">
                 <div className="mockup-screen mockup-back">
-                  <img src="/images/app-details.jpg" alt="AniWings App Details Screen" />
+                  <img src="/images/app-login.jpg" alt="AniWings App Login Screen" />
                 </div>
                 <div className="mockup-screen mockup-front">
                   <img src="/images/app-home.jpg" alt="AniWings App Home Screen" />
@@ -98,7 +98,7 @@ export default function Home({ version, updateData }) {
         <div className="container">
           <div className="content-x">
             <div className="intro">
-              <img alt="AniWings details" src="/images/screenshot-browse.jpg" style={{ border: '4px solid rgba(255, 255, 255, 0.05)', borderRadius: '20px' }} />
+              <img alt="AniWings details" src="/images/discover.jpg" style={{ border: '4px solid rgba(255, 255, 255, 0.05)', borderRadius: '20px' }} />
             </div>
             <div className="text">
               <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '24px' }}>
