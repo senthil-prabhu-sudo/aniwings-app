@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 
 export default function Home({ version, updateData }) {
-  const currentVersion = updateData?.version || version || '1.0.0';
-  const downloadUrl = updateData?.url || '/aniwings.apk';
+  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/senthil-prabhu-sudo/aniwings-app/releases/download/v1.0.1/aniwings.apk';
+  const currentVersion = updateData?.version || version || '1.0.1';
+  const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const tvDownloadUrl = updateData?.tvUrl || downloadUrl;
-  const fileSize = updateData?.fileSize || '25 MB';
+  const fileSize = updateData?.fileSize || '64.5 MB';
   const updatedAt = updateData?.updatedAt || 'Recent';
   const releaseNotes = updateData?.releaseNotes;
 
@@ -227,7 +228,8 @@ export default function Home({ version, updateData }) {
                 <div className="dlu-btn">
                   <a 
                     href={downloadUrl} 
-                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn btn-lg btn-pre"
                   >
                     <i className="ri-download-fill"></i>
@@ -248,7 +250,8 @@ export default function Home({ version, updateData }) {
                 <div className="dlu-btn">
                   <a 
                     href={tvDownloadUrl} 
-                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn btn-lg btn-pre"
                   >
                     <i className="ri-download-fill"></i>

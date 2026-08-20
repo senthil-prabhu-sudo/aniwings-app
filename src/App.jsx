@@ -24,7 +24,7 @@ function App() {
 
     async function loadUpdateInfo() {
       try {
-        const res = await fetch('/update.json');
+        const res = await fetch(`/update.json?t=${Date.now()}`, { cache: 'no-store' });
         if (!res.ok) throw new Error(`HTTP status: ${res.status}`);
         const data = await res.json();
         if (isMounted && data && typeof data === 'object') {
