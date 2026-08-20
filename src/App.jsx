@@ -6,8 +6,8 @@ import Home from './pages/Home';
 
 const DEFAULT_UPDATE_DATA = {
   version: '1.0.1',
-  url: 'https://github.com/senthil-prabhu-sudo/aniwings-app/releases/download/v1.0.1/aniwings.apk',
-  tvUrl: 'https://github.com/senthil-prabhu-sudo/aniwings-app/releases/download/v1.0.1/aniwings.apk',
+  url: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.0.1/aniwings.apk',
+  tvUrl: 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.0.1/aniwings.apk',
   mandatory: true,
   releaseNotes: 'AniWings v1.0.1 update - mandatory release featuring performance enhancements, stability fixes, and improved stream playback.',
   minVersion: '1.0.1',

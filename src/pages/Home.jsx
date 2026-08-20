@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 export default function Home({ version, updateData }) {
-  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/senthil-prabhu-sudo/aniwings-app/releases/download/v1.0.1/aniwings.apk';
+  const DEFAULT_GITHUB_RELEASE_URL = 'https://github.com/thehakaiben-cmyk/aniwings-app/releases/download/v1.0.1/aniwings.apk';
   const currentVersion = updateData?.version || version || '1.0.1';
   const downloadUrl = updateData?.url || DEFAULT_GITHUB_RELEASE_URL;
   const tvDownloadUrl = updateData?.tvUrl || downloadUrl;
@@ -82,7 +82,7 @@ export default function Home({ version, updateData }) {
             <div className="bi-right">
               <div className="app-mockup-wrapper">
                 <div className="mockup-screen mockup-back">
-                  <img src="/images/app-login.jpg" alt="AniWings App Login Screen" />
+                  <img src="/images/app-details.jpg" alt="AniWings App Details Screen" />
                 </div>
                 <div className="mockup-screen mockup-front">
                   <img src="/images/app-home.jpg" alt="AniWings App Home Screen" />
@@ -98,7 +98,7 @@ export default function Home({ version, updateData }) {
         <div className="container">
           <div className="content-x">
             <div className="intro">
-              <img alt="AniWings details" src="/images/discover.jpg" style={{ border: '4px solid rgba(255, 255, 255, 0.05)', borderRadius: '20px' }} />
+              <img alt="AniWings details" src="/images/screenshot-browse.jpg" style={{ border: '4px solid rgba(255, 255, 255, 0.05)', borderRadius: '20px' }} />
             </div>
             <div className="text">
               <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '24px' }}>
@@ -113,6 +113,69 @@ export default function Home({ version, updateData }) {
               <p>
                 Whether you love original Japanese voice acting with clear subtitles (SUB) or prefer localized English voice tracks (DUB), AniWings offers quick toggles so you can switch languages instantly during playback.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* App Interface Showcase Section */}
+      <div className="section section-screenshots reveal" id="section-screenshots" style={{ paddingTop: '20px', paddingBottom: '60px' }}>
+        <div className="container">
+          <h2 className="section-title">Explore the Interface</h2>
+          <p className="section-desc">Designed from the ground up for a sleek, fast, and modern anime streaming experience on Android.</p>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+            gap: '24px',
+            marginTop: '40px'
+          }}>
+            <div className="screenshot-card" style={{
+              background: 'var(--card-surface)',
+              borderRadius: '20px',
+              padding: '16px',
+              border: '1px solid var(--border-subtle)',
+              textAlign: 'center'
+            }}>
+              <img src="/images/screenshot-home.jpg" alt="Home Screen" style={{ width: '100%', borderRadius: '14px', marginBottom: '12px' }} />
+              <h4 style={{ color: 'var(--text-primary)', fontSize: '1.1rem', marginBottom: '4px' }}>Home Dashboard</h4>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Trending titles, featured series, and quick hero playback</p>
+            </div>
+
+            <div className="screenshot-card" style={{
+              background: 'var(--card-surface)',
+              borderRadius: '20px',
+              padding: '16px',
+              border: '1px solid var(--border-subtle)',
+              textAlign: 'center'
+            }}>
+              <img src="/images/screenshot-browse.jpg" alt="Browse Screen" style={{ width: '100%', borderRadius: '14px', marginBottom: '12px' }} />
+              <h4 style={{ color: 'var(--text-primary)', fontSize: '1.1rem', marginBottom: '4px' }}>Browse Anime</h4>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Filter by genre, status, popularity, and HD quality tags</p>
+            </div>
+
+            <div className="screenshot-card" style={{
+              background: 'var(--card-surface)',
+              borderRadius: '20px',
+              padding: '16px',
+              border: '1px solid var(--border-subtle)',
+              textAlign: 'center'
+            }}>
+              <img src="/images/screenshot-schedule.jpg" alt="Schedule Screen" style={{ width: '100%', borderRadius: '14px', marginBottom: '12px' }} />
+              <h4 style={{ color: 'var(--text-primary)', fontSize: '1.1rem', marginBottom: '4px' }}>Simulcast Schedule</h4>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Daily broadcast timeline for upcoming episode releases</p>
+            </div>
+
+            <div className="screenshot-card" style={{
+              background: 'var(--card-surface)',
+              borderRadius: '20px',
+              padding: '16px',
+              border: '1px solid var(--border-subtle)',
+              textAlign: 'center'
+            }}>
+              <img src="/images/screenshot-details.jpg" alt="Details Screen" style={{ width: '100%', borderRadius: '14px', marginBottom: '12px' }} />
+              <h4 style={{ color: 'var(--text-primary)', fontSize: '1.1rem', marginBottom: '4px' }}>Rich Show Details</h4>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Ratings, cast, episode lists, SUB/DUB options, and direct play</p>
             </div>
           </div>
         </div>
